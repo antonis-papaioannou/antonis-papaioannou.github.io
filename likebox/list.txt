@@ -1,5 +1,0 @@
-akuro.html
-likebox_frame.html
-likebox_html5.html
-likebox_xfbml.html
-list.txt
