@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="./css/principale.css">
+<script type="text/javascript" src="js/prototype.lite.js"></script>
+<script type="text/javascript" src="js/moo.fx.js"></script>
+<script type="text/javascript" src="js/moo.fx.pack.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function casa() {
+	tit.custom(1, 0);
+	setTimeout(function() {
+			top.location = "http://www.ics.forth.gr/~papaioan";
+	}, 400);
+}
+
+function siblink(el) {
+	top.location = el.childNodes[0];
+}
+
+function init() {
+	tit = new fx.Opacity('title', {duration: 400});
+}
+
+function front_init() {
+
+	cont = new fx.Combo('content', {duration: 1600, width:false, height:true, opacity:true});
+	cont.hide();
+
+	//tit = new fx.Opacity('title', {duration: 1200});
+	//tit.setOpacity(0);
+	
+	setTimeout(function() {
+			cont.toggle();
+	}, 1000);
+
+	//setTimeout(function() {
+	//		tit.custom(0, 1);
+	//}, 1000);
+	
+}
+//]]>
+</script>
+
+<STYLE TYPE="text/css"> <!-- div { text-align:justify; } --> </STYLE>
+
+<title>Antonis Papaioannou : Projects</title>
+</head>
+<body>
+
+<div id="container">
+	<div id="win">
+		<div id="nav">
+			<div id="title" onclick="casa()"></div>
+			<div id="right">
+				<ul>
+				    <li class="smoke" id="li_research" onclick="siblink(this)"><a 
+				href="./index.html">Home</a></li>
+				    <li class="peach" id="li_teaching" onclick="siblink(this)"><a 
+				href="./publications.html">Publications</a></li>
+				    <li class="sand" id="li_activities" onclick="siblink(this)"><a 
+				href="./projects.html">Projects</a></li>
+				    <li class="pine" id="li_personal" onclick="siblink(this)"><a 
+				href="./interests.html">Interests</a></li>
+				    <li class="steel" id="li_links" onclick="siblink(this)"><a 
+				href="./links.html">Links</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bound">
+
+			<div id="lbound" class="sand"></div>
+			<div id="rbound" class="sand"></div>
+		</div>
+		<div id="content">
+		<!--	<div class="left"> </div> -->
+
+		<!--	<div class="main"> -->
+			<div>
+			<br>
+			<h3> Adaptation policies in large-scale distributed data stores </h3>
+			<br>
+			<p> Operators of successful Internet-scale applications invariably see the 
+			growing popularity of their services translate into the need for more data 
+			capacity, higher I/O performance, and continuous operation. Data demands have 
+			been growing exponentially in recent years and distributed data stores have 
+			been gaining popularity as a means to addressing these needs. </p>
+
+			<p> Rather than relying on centralized storage arrays, distributed data stores 
+			consolidate large numbers of commodity servers into a single storage pool, 
+			providing large capacity and high performance at low cost over an unreliable 
+			and dynamically-changing (often cloud-based) infrastructure. </p>
+
+			<p> A special class of systems goes further to offer guarantees to achieve 
+			application performance goals described as Service Level Objectives (SLOs). 
+			Such systems focus on identifying the performance capabilities of available 
+			resources and then predict and provision the optimal set resources necessary 
+			to achieve the requested performance goals. Since application requirements 
+			(and thus SLOs) change over time, quality of service (QoS)-aware data stores 
+			should be able to adapt to the new requirements to comply with application 
+			expectations. </p>
+
+			<p> A key question is to determine the appropriate adaptation actions that 
+			maintain the same application semantics (regarding durability, availability, 
+			integrity and consistency of data) model while minimizing or ideally even 
+			hiding the window of performance degradation. In addition, there is usually a 
+			trade-off between the duration of the adaptation actions and their performance 
+			impact on the system during adaptation. Ideally, the system should be able to 
+			adapt to data growth or the workload changes as quickly as possible to satisfy 
+			application requirements. Nevertheless, the more aggressive the adaptation 
+			action the deeper its impact on application performance, exposing a key tradeoff. 
+			There are important research questions to be addressed on agile provisioning 
+			and adaptation policies for large scale distributed data stores that target to 
+			achieve SLOs or offer the best possible performance while ensuring the 
+			durability, availability, and consistency of data. </p>
+
+			<p> The goal of the project is to address the important research questions on 
+			agile provisioning and adaptation policies for large scale distributed data 
+			stores that target to achieve SLOs or offer the best possible performance. As 
+			a matter of fact it is required a platform that can provide resource and support 
+			the deployment of distributed data store. Multiple nodes may effectively be 
+			used during the runtime of experiments by joining (or leaving) the system providing 
+			elastic and adaptive features to the data store. During the experiment we should 
+			be able to monitor the application performance as well as the available resource 
+			utilization while the application evolves during its lifetime. </p>
+
+
+			</div>
+		</div>
+		<div id="footer">
+			<div style="width: 766px; clear: both; margin-bottom: 1px;">
+				<div id="lt"></div>
+				<div id="rt"></div>
+			</div>
+
+			<div style="width: 766px; clear: both">
+				<div id="lb"></div>
+				<div id="rb">
+				    <script type="text/javascript">	
+					//<![CDATA[
+					showTime();
+					//]]>
+				    </script>
+				    <br><p align="right"><span id="time" class="black"> </span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+init();
+//]]>
+</script>
+
+</body>
+</html>
+

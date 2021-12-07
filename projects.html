@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="./css/principale.css">
+<script type="text/javascript" src="js/prototype.lite.js"></script>
+<script type="text/javascript" src="js/moo.fx.js"></script>
+<script type="text/javascript" src="js/moo.fx.pack.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function casa() {
+	tit.custom(1, 0);
+	setTimeout(function() {
+			top.location = "http://www.ics.forth.gr/~papaioan";
+	}, 400);
+}
+
+function siblink(el) {
+	top.location = el.childNodes[0];
+}
+
+function init() {
+	tit = new fx.Opacity('title', {duration: 400});
+}
+
+function front_init() {
+
+	cont = new fx.Combo('content', {duration: 1600, width:false, height:true, opacity:true});
+	cont.hide();
+
+	//tit = new fx.Opacity('title', {duration: 1200});
+	//tit.setOpacity(0);
+	
+	setTimeout(function() {
+			cont.toggle();
+	}, 1000);
+
+	//setTimeout(function() {
+	//		tit.custom(0, 1);
+	//}, 1000);
+	
+}
+//]]>
+</script>
+<title>Antonis Papaioannou : Projects</title>
+</head>
+<body>
+
+<div id="container">
+	<div id="win">
+		<div id="nav">
+			<div id="title" onclick="casa()"></div>
+			<div id="right">
+				<ul>
+				    <li class="smoke" id="li_research" onclick="siblink(this)"><a 
+				href="./index.html">Home</a></li>
+				    <li class="peach" id="li_teaching" onclick="siblink(this)"><a 
+				href="./publications.html">Publications</a></li>
+				    <li class="sand" id="li_activities" onclick="siblink(this)"><a 
+				href="./projects.html">Projects</a></li>
+				    <li class="pine" id="li_personal" onclick="siblink(this)"><a 
+				href="./interests.html">Interests</a></li>
+				    <li class="steel" id="li_links" onclick="siblink(this)"><a 
+				href="./links.html">Links</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bound">
+
+			<div id="lbound" class="sand"></div>
+			<div id="rbound" class="sand"></div>
+		</div>
+		<div id="content">
+		<!--	<div class="left"> </div> -->
+
+		<!--	<div class="main"> -->
+			<div>
+				<br />
+				<br />
+				<h3>On-demand VM provisioning and dynamic application deployment using SmartFrog</h3>
+				The purpose of this <a href="./misc/dynamic_smartfrog.pdf">document (pdf) </a>is to present in more detail how we extend the applicability of SmartFrog to on-demand provisioning of cloud VMs and dynamic deployment of software components on them.
+				
+				<br />
+				<br />
+				<h4>Related Material</h4>
+				<ul>
+				    <li>Cross-layer Management of Distributed Applications on Multi-Clouds <br />
+				    Antonis Papaioannou, Damianos Metallidis and Kostas Magoutis <br />
+				    in Proceedings of IFIP/IEEE IM 2015 Symposium on Integrated Network Management (IM 2015), Ottawa, Canada, May 11-15, 2015
+				</ul>
+
+
+				<h3>Metadata Database (MDDB)</h3>
+				This section provides information about the MDDB design as well as related publications
+				<br />
+				You can get the full MDDB schema: 
+				<a href='./misc/MDDB_schema.png'>png version</a> and 
+				<a href='./misc/MDDB_schema.html'>html version</a> <br />
+				
+				<br />
+				<h4>Related Documents</h4>
+				<ul>
+					<li>An Architecture for Evaluating Distributed Application Deployments in Multi-Clouds <br />
+				Antonis Papaioannou and Kostas Magoutis </br>
+				in Proceedings of 5th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2013), Bristol, UK, December 2-5, 2013 <a href="./misc/papaioannou_cloubcom.pdf">pdf</a>
+</li>
+				</ul>
+				<br />
+
+			</div>
+		</div>
+		<div id="footer">
+			<div style="width: 766px; clear: both; margin-bottom: 1px;">
+				<div id="lt"></div>
+				<div id="rt"></div>
+			</div>
+
+			<div style="width: 766px; clear: both">
+				<div id="lb"></div>
+				<div id="rb">
+				    <script type="text/javascript">	
+					//<![CDATA[
+					showTime();
+					//]]>
+				    </script>
+				    <br><p align="right"><span id="time" class="black"> </span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+init();
+//]]>
+</script>
+
+</body>
+</html>
+

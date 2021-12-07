@@ -1,0 +1,308 @@
+/* Valeria Bertacco stile */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.smoke { background: #b4a9a5; }
+.smoke:hover { background: #958680; }
+.peach { background: #d2b9a7; }
+.peach:hover { background: #bd997d; }
+.sand { background: #cbc2b6; }
+.sand:hover { background: #aea08e; }
+.steel { background: #adb2b3; }
+.steel:hover { background: #888f91; }
+.pine { background: #8f9d92; }
+.pine:hover { background: #6d7c71; }
+.lightgrey { background: #e7e7e8; }
+
+.black { color: #000; }
+
+body {
+	font: normal normal 12px/1.3em "Trebuchet MS", trebuchet, sans-serif;
+	color: #5c6263;
+	background: #fff;
+}
+
+h1 {
+	font: normal normal 2.5em/1.0em arial, helvetica, sans-serif;
+	letter-spacing: -1px;
+}
+
+
+h2 {
+	font: normal normal 2.0em/1.0em arial, helvetica, sans-serif;
+	letter-spacing: -1px;
+	background: transparent url(../img/dots_horiz.gif) repeat-x 5px 25px;
+	width: 50%;
+	padding: 0px 0px 5px 0px;
+}
+
+div.main h2, div.left h2 {
+	width: 250px;
+}
+div.content-wide h2 {
+	min-width: 300px;
+}
+
+
+h3 {
+	font: normal normal 1.4em/1.0em arial, helvetica, sans-serif;
+	letter-spacing: -1px;
+	color: #485f7d;
+}
+
+hr {
+	width: 90%;
+	border: 0;
+	color: inherit;
+	height: 10px;
+	background: transparent url(../img/dots_horiz.gif) repeat-x left top;
+}
+hr.section {
+	margin: 25px 0px 10px 0px;
+}
+
+
+a {
+	color: #81423f;
+	text-decoration: none;
+	border-bottom: 1px dotted inherit;
+}
+a:hover {
+	color: #816a62;
+	text-decoration: none;
+	border-bottom: 1px dotted #816a62;
+}
+
+p { margin: 0px 0px 15px 0px; }
+
+.subheader {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+.smaller {
+	font-size: 0.9em;
+	font-family: verdana, helvetica, arial, sans-serif;
+}
+
+address {
+	margin: 20px 10px 0px 10px;
+	font: normal normal 0.95em/1.3em verdana, helvetica, arial, sans-serif;
+}
+
+div.left {
+	font-size: 0.95em;
+}
+dl dt {
+	font: bold normal 1.25em/1.0em arial, helvetica, sans-serif;
+	letter-spacing: 0px;
+	color: #817a75;	
+}
+dl dd {
+	margin: 0px 0px 0px 30px;
+}
+
+ul {
+    list-style-type: circle;
+/*    list-style-position: inside; */
+	margin: 0px 0px 15px 0px;
+}
+
+#address a {
+	color: #666666;
+	text-decoration: none;
+	border-bottom: 1px dotted #666666;
+}
+#address a:hover {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+}
+
+#container {
+	width: auto;
+	text-align: center;
+}
+
+#win {
+	text-align: left;
+	margin: 40px auto 0px auto;
+	width: 766px;
+	height: 500px;
+}
+
+#win #footer {
+	width: 766px;
+	height: 70px;
+	clear: both;
+}
+
+#win #footer #lt {
+	width: 291px;
+	height: 20px;
+	background: #d0d3d8;
+	float: left;
+	margin: 0px 0px 1px 0px;
+}
+#win #footer #rt {
+	width: 474px;
+	height: 20px;
+	background: #b0b4bd;
+	float: right;
+	margin: 0px 0px 1px 0px;
+}
+#win #footer #lb {
+	width: 291px;
+	height: 49px;
+	background: #b4a9a5; //#a1a6b1;
+	float: left;
+}
+#win #footer #rb {
+	width: 474px;
+	height: 49px;
+	background: #816a62; //#61687b;
+	float: right;
+}
+
+#win #nav {
+	width: 766px;
+	height: 94px;
+	border-bottom: 1px solid #fff;
+	clear: both;
+}
+#win #nav #title {
+	width: 290px;
+	height: 94px;
+	border-right: 1px solid #fff;
+	float: left;
+	background: #fff url(../img/title3.jpg) no-repeat left top;
+}
+#win #nav #right {
+	width: 475px;
+	height: 94px;
+	float: right;
+	background: #ddd;
+}
+
+#win #nav #right ul {
+	list-style: none;
+}
+#win #nav #right ul li {
+	display: block;
+	width: 94px;
+	height: 94px;
+	float: left;
+	border-right: 1px solid #fff;
+	cursor: pointer;
+}
+#win #nav #right ul li a, #win #nav #right ul li a:hover {
+	position: relative;
+	left: 5px;
+	top: 55px;
+	color: #fff;
+	text-decoration: none;
+	font: normal normal 1.3em/1.0em arial, helvetica, sans-serif;
+	border: 0;
+}
+
+#win #banner {
+	width: 766px;
+	height: 220px;
+	border-bottom: 1px solid #fff;
+	clear: both;
+}
+#win #banner #address {
+	width: 290px;
+	height: 220px;
+	border-right: 1px solid #fff;
+	float: left;
+	background: #e7e7e8;
+}
+#win #banner #photo {
+	width: 474px;
+	height: 220px;
+	float: right;
+	background: #fff url(../img/uoc.jpg) no-repeat left top;
+}
+
+#win #bound {
+	width: 766px;
+	height: 49px;
+	clear: both;
+}
+#win #bound #lbound {
+	width: 290px;
+	height: 49px;
+	border-right: 1px solid #fff;
+	float: left;
+	background: #b4a9a5;
+}
+
+#win #bound #lbound.smoke { background: #dad4d2; }
+#win #bound #lbound.peach { background: #e9dcd3; }
+#win #bound #lbound.sand { background: #e5e1db; }
+#win #bound #lbound.steel { background: #d6d9d9; }
+#win #bound #lbound.pine { background: #c7cec9; }
+
+#win #bound #rbound {
+	width: 474px;
+	height: 49px;
+	float: left;
+	background: #816a62;
+}
+
+#win #bound #rbound.smoke { background: #b4a9a5; }
+#win #bound #rbound.peach { background: #d2b9a7; }
+#win #bound #rbound.sand { background: #cbc2b6; }
+#win #bound #rbound.steel { background: #adb2b3; }
+#win #bound #rbound.pine { background: #8f9d92; }
+
+#content-wide {
+	width: 766px;
+	clear: both;
+	padding: 5px 0px 5px 0px;
+	font-size: 1.1em;
+	background: #fff;
+}
+
+#content {
+	width: 766px;
+	clear: both;
+}
+#content div.left {
+	/* width: 291px; */
+	width: 286px;
+	padding: 5px 5px 0px 5px;
+	background: #fff url(../img/dots_vertical.gif) repeat-y right top;
+	float: left;
+}
+#content div.main {
+	margin: 0px 0px 0px 300px; /* 291px for the left content; 9px for padding */
+	padding-top: 5px;
+	background: #fff;
+	font-size: 1.1em;
+}
+
+
+#content div.main-solo {
+	margin: 0px 0px 0px 0px; /* 291px for the left content; 9px for padding */
+	padding-top: 5px;
+	background: #fff;
+	font-size: 1.1em;
+}
+
+li.publication {
+    margin: 0em 0em 0.5em 30px;
+	list-style-type: disc;
+}
+
+dt.publication {
+	margin: 0em 0em 0.5em 0px;
+/*	text-decoration: underline; */
+}
+

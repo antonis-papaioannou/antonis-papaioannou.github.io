@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="./css/principale.css">
+<script type="text/javascript" src="js/prototype.lite.js"></script>
+<script type="text/javascript" src="js/moo.fx.js"></script>
+<script type="text/javascript" src="js/moo.fx.pack.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function casa() {
+	tit.custom(1, 0);
+	setTimeout(function() {
+			top.location = "http://www.ics.forth.gr/~papaioan";
+	}, 400);
+}
+
+function siblink(el) {
+	top.location = el.childNodes[0];
+}
+
+function init() {
+	tit = new fx.Opacity('title', {duration: 400});
+}
+
+function front_init() {
+
+	cont = new fx.Combo('content', {duration: 1600, width:false, height:true, opacity:true});
+	cont.hide();
+
+	//tit = new fx.Opacity('title', {duration: 1200});
+	//tit.setOpacity(0);
+	
+	setTimeout(function() {
+			cont.toggle();
+	}, 1000);
+
+	//setTimeout(function() {
+	//		tit.custom(0, 1);
+	//}, 1000);
+	
+}
+//]]>
+</script>
+
+<style type="TEXT/CSS">
+a { text-decoration: underline; }
+</style>
+
+<title>Antonis Papaioannou : Publications</title>
+</head>
+<body>
+
+<div id="container">
+	<div id="win">
+		<div id="nav">
+			<div id="title" onclick="casa()"></div>
+			<div id="right">
+				<ul>
+				    <li class="smoke" id="li_research" onclick="siblink(this)"><a 
+				href="./index.html">Home</a></li>
+				    <li class="peach" id="li_teaching" onclick="siblink(this)"><a 
+				href="./publications.html">Publications</a></li>
+				    <li class="sand" id="li_activities" onclick="siblink(this)"><a 
+				href="./projects.html">Projects</a></li>
+				    <li class="pine" id="li_personal" onclick="siblink(this)"><a 
+				href="./interests.html">Interests</a></li>
+				    <li class="steel" id="li_links" onclick="siblink(this)"><a 
+				href="./links.html">Links</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bound">
+
+			<div id="lbound" class="peach"></div>
+			<div id="rbound" class="peach"></div>
+		</div>
+		<div id="content">
+			<div class="main-solo">
+				<h2>Publications</h2>
+				<br />
+
+	        	<dl>
+				<dt class="publication"> Refereed conference papers</dt>	
+            	<ul>
+				<li class="publication">
+                    Amoeba: Aligning Stream Processing Operators with Externally-Managed State<br>
+                    Antonis Papaioannou and Kostas Magoutis<br>
+                    to appear in the 14th IEEE/ACM International Conference on Utility and Cloud Computing, Leicester, UK, December 2021
+                </li>
+				<li class="publication">
+                    The Case for Better Integrating Scalable Data Stores and Stream-Processing Systems<br>
+                    Antonis Papaioannou, Chrysostomos Zeginis and Kostas Magoutis<br>
+                    in the IEEE Cluster Conference 2020, Kobe, Japan, (two page proceedings paper accompanying a poster)
+                    <br>
+                    (<a href="./publications/papaioannou_cluster_2020.pdf">pdf</a>, &nbsp;
+                    <a href="https://www.youtube.com/watch?v=GQk0sQ9dkNw">lightning video presentation</a>)
+                </li>
+				<li class="publication">
+                    Novel adaptation mechanisms for distributed data stores<br>
+                    Antonis Papaioannou <br>
+                    in the 14th EuroSys Doctoral Workshop (EuroDW 2020), April 2020
+                </li>
+				<li class="publication">
+					On the impact of log compaction on incrementally checkpointing stateful stream-processing operators <br>
+					A. Chronarakis, A. Papaioannou and K. Magoutis <br>
+					in the IEEE 38th International Symposium on Reliable Distributed Systems Workshops,
+					1st Workshop on Distributed and Reliable Storage Systems (DRSS 2019),
+					Lyon, France, October 2019
+					(<a href="./publications/papaioan_drss19_ic_compactions.pdf">pdf</a>,
+					<a href="./publications/papaioan_drss19_ic_compactions.bib">BibTex</a>).
+				</li> 
+        	    <li class="publication">
+					Replica-group leadership change as a performance enhancing mechanism in NoSQL data stores <br />
+					A. Papaioannou and K. Magoutis <br>
+					in the 38th IEEE International Conference on Distributed Computing Systems (ICDCS 2018), 
+					Vienna, Austria, July, 2018
+					(<a href="./publications/papaioannou_icdcs18_leadership_change.pdf">pdf</a>
+					<a href="./publications/papaioannou_icdcs18_leadership_change.bib">BibTex</a>).
+				</li>
+        	    <li class="publication">
+					Incremental elasticity for NoSQL data stores <br />
+					A. Papaioannou and K. Magoutis <br>
+					in the 36th IEEE International Symposium on Reliable Distributed Systems (SRDS 2017), 
+					Hong Kong, China, September, 2017 
+					(<a href="./publications/papaioannou_srds17_incremental_elasticity.pdf">pdf</a>
+					<a href="./publications/papaioannou_srds17_incremental_elasticity.bib">BibTex</a>).
+				</li>
+        	    <li class="publication">
+					Incremental elasticity for NoSQL data stores <br />
+					A. Papaioannou and K. Magoutis <br>
+					in the 37th IEEE International Conference on Distributed Computing Systems (ICDCS 2017), 
+					Atlanta, GA, USA, June 2017, (two page proceedings paper accompanying a poster), 
+					(<a href="./publications/papaioannou_icdcs_incremental_elasticity.pdf">pdf</a>
+					<a href="./publications/papaioannou_icdcs_incremental_elasticity.bib">BibTex</a>). 
+				</li>
+        	    <li class="publication">
+					C2C: An Automated Deployment Framework for Distributed Applications on Multi-Clouds <br />
+					F. Karniavoura, A. Papaioannou and K. Magoutis <br>
+					in 9th Symposium and Summer School on Service Oriented Computing -
+					SummerSOC&#39;15, 2015, Crete, Greece, June 2015 <br>
+					Appears as IBM Technical Report RC25564, 2015
+					(<a href="./publications/papaioan_summersoc2015.pdf">pdf</a>).
+				</li>
+				<li class="publication">
+					Cross-layer Management of Distributed Applications on Multi-Clouds <br>
+					A. Papaioannou, D. Metallidis and K. Magoutis <br>
+					in 2015 IEEE International Symposium on Integrated Network Management - IM&#39;15, Ottawa,
+					Canada, May 2015
+					(<a href="http://dl.ifip.org/db/conf/im/im2015m/137458.pdf">pdf</a> 
+					 <a href="./publications/papaioan_im2015_extra.pdf">Supplementary material</a> 
+					 <a href="./publications/papaioan_im2015_extra.bib">BibTex</a>).
+				</li>
+				<li class="publication">
+					An architecture for evaluating distributed application deployments in multi-clouds <br>
+					A. Papaioannou and K. Magoutis <br>
+					in Proceedings of the 2013 IEEE International Conference on 
+					Cloud Computing Technology and Science - Cloudcom&#39;13, Bristol, UK, December 2013
+					(<a href="./publications/papaioan_cloudcom2013.pdf">pdf</a>
+					 <a href="./publications/papaioan_cloudcom2013.bib">BibTex</a>).
+				</li>
+				<li class="publication">
+					Lifecycle management of service-based applications on multi-clouds: A research roadmap<br>
+					G. Baryannis, P. Garefalakis, K. Kritikos, K. Magoutis, A. Papaioannou, 
+					D. Plexousakis, and C. Zeginis, <br>
+					in Proceedings of 2013 International Workshop on Multi-cloud Applications 
+					and Federated Clouds (MultiCloud), April 2013
+					(<a href="./publications/papaioan_multicloud2013.pdf">pdf</a>
+					 <a href="./publications/papaioan_multicloud2013.bib">BibTex</a>).
+				</li>
+				<li class="publication"> 
+					Adapting dataintensive workloads to generic allocation policies in cloud infrastructures <br>
+					I. Kitsos, A. Papaioannou, N. Tsikoudis, and K. Magoutis <br>
+ 					in Network Operations and Management Symposium (NOMS), 2012 IEEE, 2012
+					(<a href="./publications/papaioan_noms2012.pdf">pdf</a>, 
+					 <a href="./publications/papaioan_noms2012.bib">BibTex</a>).
+				</li>
+  	            </UL>
+            	
+	<!--			<dt class="publication">Journal</dt> -->
+
+				<dt class="publication">Journal Paper</dt>			
+					<ul>
+					<li class="publication">
+						Design and implementation of a social networking platform for cloud deployment specialists <br>
+						Kostas Magoutis, Christos Papoulas, Antonis Papaioannou, Flora Karniavoura, Dimitrios-Georgios Akestoridis, Nikos Parotsidis, Maria Korozi, Asterios Leonidis, Stavroula Ntoa and Constantine Stephanidis 	<br>
+						SpringerOpen Journal of Internet Services and Applications, 2015  
+						(<a href="http://jisajournal.springeropen.com/articles/10.1186/s13174-015-0036-2">available here</a>)<br>
+
+					</li>
+				</ul>
+
+				<dt class="publication">Poster</dt>
+				<ul>
+					<li class="publication">
+                    The Case for Better Integrating Scalable Data Stores and Stream-Processing Systems<br>
+                    Antonis Papaioannou and Kostas Magoutis<br>
+                    to appear in the IEEE Cluster Conference 2020, Kobe, Japan
+                    </li>
+					<li class="publication">
+					Incremental elasticity for NoSQL data stores <br />
+					A. Papaioannou and K. Magoutis <br>
+					in the 37th IEEE International Conference on Distributed Computing Systems (ICDCS 2017), 
+					Atlanta, GA, USA, June 2017, (<a href="./publications/papaioannou_icdcs_incremental_elasticity_poster.pdf">pdf</a>)
+					</li>
+					<li class="publication">
+						SmartM:	Automated Lifecycle Management Framework for Distributed Applications 
+						on Multi-Clouds. <br>
+						Antonis Papaioannou, Damianos Metallidis, and Kostas Magoutis <br>
+						Proc. of the Tenth International Summer School on Advanced Computer 
+						Architecture and Compilation for High-Performance and Embedded Systems (ACACES), 
+						Poster session, Fiuggi, Italy, July 2014
+					</li>
+				</ul>
+
+
+				<dt class="publication">Other</dt>
+				<ul>
+					<li class="publication">
+						Design And Implementation Of A System For Evaluating Distributed 
+						Application Deploymets in Multicloud <br>
+						MSc thesis, Computer Science Department, University of Crete, 
+						Heraklion Crete, Greece, Oct. 2013
+						(<a href="./publications/papaioan_thesis.pdf">pdf</a>).
+					</li>
+				</ul>
+			</dl>
+
+			<br>
+			</div>
+		</div>
+		<div id="footer">
+			<div style="width: 766px; clear: both; margin-bottom: 1px;">
+
+				<div id="lt"></div>
+				<div id="rt"></div>
+			</div>
+			<div style="width: 766px; clear: both">
+				<div id="lb"></div>
+				<div id="rb">
+				    <script type="text/javascript">	
+					//<![CDATA[
+					showTime();
+					//]]>
+					</script>
+				    <br><p align="right"><span id="time" class="black"> </span></p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+init();
+//]]>
+</script>
+
+</body>
+</html>
+
