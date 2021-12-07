@@ -1,1 +1,232 @@
-Hello World
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="./css/principale.css">
+<script type="text/javascript" src="js/prototype.lite.js"></script>
+<script type="text/javascript" src="js/moo.fx.js"></script>
+<script type="text/javascript" src="js/moo.fx.pack.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function casa() {
+	tit.custom(1, 0);
+	setTimeout(function() {
+			top.location = "http://www.ics.forth.gr/~papaioan";
+	}, 400);
+}
+
+function siblink(el) {
+	top.location = el.childNodes[0];
+}
+
+function init() {
+	tit = new fx.Opacity('title', {duration: 400});
+}
+
+function front_init() {
+
+	cont = new fx.Combo('content', {duration: 1600, width:false, height:true, opacity:true});
+	cont.hide();
+
+	//tit = new fx.Opacity('title', {duration: 1200});
+	//tit.setOpacity(0);
+	
+	setTimeout(function() {
+			cont.toggle();
+	}, 1000);
+
+	//setTimeout(function() {
+	//		tit.custom(0, 1);
+	//}, 1000);
+	
+}
+//]]>
+</script>
+
+<title>Antonis Papaioannou</title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32845609-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body >
+<div id="container">
+	<div id="win">
+		<div id="nav">
+			<div id="title" onclick="cont.toggle()"></div>
+			<div id="right">
+				<ul>
+				    <li class="smoke" id="li_research" onclick="siblink(this)"><a 
+				href="./index.html">Home</a></li>
+				    <li class="peach" id="li_teaching" onclick="siblink(this)"><a 
+				href="./publications.html">Publications</a></li>
+				    <li class="sand" id="li_activities" onclick="siblink(this)"><a 
+				href="./projects.html">Projects</a></li>
+				    <li class="pine" id="li_personal" onclick="siblink(this)"><a 
+				href="./interests.html">Interests</a></li>
+				    <li class="steel" id="li_links" onclick="siblink(this)"><a 
+				href="./links.html">Links</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner_container">
+			<div id="banner">
+				<div id="address">
+				<address>
+					<br> <br> <br>
+					<center>
+					PhD Candidate,<br>
+					Computer Science, <br>
+					Computer Science Department <br>
+					University of Crete <br>
+					</center>
+<!--					<br>
+					and <br>
+					<br>
+					Graduate Research Assistant <br>
+					Information Systems Lab (ISL) <br>
+					Institute of Computer Science (ICS), <br>
+					Foundation for Research and Technology - Hellas (FORTH) <br>
+					Heraklion, Crete, Greece --->
+					
+					<br>
+					<br>
+					mail:&nbsp;<i>papaioan [at] ics [dot] forth [dot] gr</i><br />
+					
+				</address>
+				</div>
+				<div id="photo"></div>
+			</div>
+		</div>
+		<div id="bound">
+			<div id="lbound"> </div>
+			<div id="rbound"></div>
+		</div>
+		<div style="visibility: visible; opacity: 0.9999; overflow: hidden; 
+			    height: 674px;" id="content">
+			<div class="left">
+<!--				<H2>Technical Skills</H2>
+				<br />
+
+		    <dl>
+		    <dt>Programming Languages:</dt>
+		    <dd>
+			<UL>
+			<LI>Java</LI>
+			<LI>C</LI>
+			<LI>C++</LI>
+			<LI>Python</LI>
+			<li>Pascal</li>
+			<LI>Matlab</LI>
+			<li>Assembly x86</li>
+			<LI>Verilog</LI>
+			<li>SQL</li>
+			<li>CQL</li>
+			<li>Bash</li>
+			</UL>
+		    </dd>
+
+		    <dt>Web Languages</dt>
+		    <dd>
+			<UL>
+			<li>Servlets</li>
+			<li>JSP</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<LI>PHP</LI>
+			<LI>Javascript</LI>
+			<LI>Ajax</LI>
+			</UL>
+		    </dd>
+
+
+		    <dt>Operating Systems Experience</dt>
+		    <dd>
+			<UL>
+			<li>Mac OS</li>
+			<LI>Linux</LI>
+			<LI>Microsoft Windows 95 to Vista</LI>
+			</UL>
+		    </dd>
+	    </dl>
+-->
+	</div>
+
+	<div class="main">
+
+<a href="#"><h2>About</h2></a>
+
+<p>
+Hi, my name is Antonis Papaioannou and currently I'm a PhD candidate under supervision of professor <a href="http://users.ics.forth.gr/~magoutis/">Kostas Magoutis</a> at <a href="https://www.csd.uoc.gr/CSD/index.jsp?lang=en">Computer Science Department</a> of <a href="http://www.en.uoc.gr">University of Crete</a>, Greece.
+I'm also an graduate research assistant at <a href="http://www.ics.forth.gr/isl/">Information Systems Lab (ISL)</a> of <a href="http://www.ics.forth.gr/">Institute of Computer Science (ICS)</a> - <a href="http://www.forth.gr/">Foundation For Research and Technology Hellas (FORTH</a>
+</p>
+
+<p>
+For my dissertation I focus on Research challenges of adaptation in large-scale data stores. 
+More specifically I work on mechanisms and policies in the context of data store adaptation.
+</p>
+
+<!--<p>I am an R&D Engineer position at the <a href="http://ics.forth.gr/carv">Computer Architecture and VLSI Systems (CARV) Laboratory</a> of <a href="http://www.ics.forth.gr/">Institute of Computer Science (ICS)</a> - <a href="http://www.forth.gr/">oundation For Research and Technology Hellas (FORTH</a>. My research interests include distributed systems and cloud computing.</p> -->
+
+<p>You can get my CV <a href="./papaioannou_cv.pdf">here</a>.</p>
+
+
+<br />
+<h2>Interests</h2>
+<dl>My areas of interests include
+	<dd>
+	<UL>
+		<li>Distributed systems </li>
+		<li>Scalable data stores </li>
+		<li>Distributed system management </li>
+		<li>Lifecycle management of multi-Cloud applications </li>
+	</UL>
+	</dd>
+</dl>
+
+		</div>
+	</div>
+		<div id="footer">
+			<div style="width: 766px; clear: both; margin-bottom: 1px;">
+				<div id="lt"></div>
+				<div id="rt"></div>
+			</div>
+			<div style="width: 766px; clear: both;">
+				<div id="lb"></div>
+				<div id="rb">
+					<script type="text/javascript">	
+					//<![CDATA[
+					showTime();
+					//]]>
+					</script>
+					<br><p align="right"><span id="time" class="black"> </span></p>
+				</div>
+			</div>
+		</div>
+
+<p align="right">
+<script language="Javascript" src="./counter.php?page=index"></script>
+</p>
+	</div>
+	</div>
+
+<script type="text/javascript">
+//<![CDATA[
+front_init();
+//]]>
+</script>
+
+</body></html>
