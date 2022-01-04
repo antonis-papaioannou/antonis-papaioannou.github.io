@@ -1,0 +1,18 @@
+@inproceedings{10.1145/3468737.3494096,
+author = {Papaioannou, Antonis and Magoutis, Kostas},
+title = {Amoeba: Aligning Stream Processing Operators with Externally-Managed State},
+year = {2021},
+isbn = {9781450385640},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3468737.3494096},
+doi = {10.1145/3468737.3494096},
+abstract = {Scalable stream processing systems (SPS) often require external storage systems for long-term storage of non-emphemeral state. Such state cannot be accommodated in the internal stores of SPSes that are mainly geared for fault tolerance of streaming jobs, lack externally visible APIs, and their state is disposed of at the end of such jobs. Recent research have pointed to scalable in-memory key-value stores (KVS) as an efficient solution to manage external state. While such data stores have been interconnected with scalable streaming systems, they are currently managed independently, missing opportunities for optimizations, such as exploiting locality between stream partitions and table shards, as well as coordinating elasticity actions. Both processing and data management systems are typically designed for scalability, however coordination between them poses a significant challenge. In this work we describe Amoeba, a system that dynamically adapts data-partitioning schemes and/or task or data placement across systems to eliminate unnecessary network communication across nodes. Our evaluation using state-of-the art systems, such as the Flink SPS and Redis KVS, demonstrated 2.6x performance improvement when aligning SPS tasks with KVS shards in AWS deployments of up to 64 nodes.},
+booktitle = {Proceedings of the 14th IEEE/ACM International Conference on Utility and Cloud Computing},
+articleno = {17},
+numpages = {10},
+keywords = {data stream processing, scalable cloud services, data locality},
+location = {Leicester, United Kingdom},
+series = {UCC '21}
+}
+
