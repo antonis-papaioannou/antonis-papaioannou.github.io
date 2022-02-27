@@ -180,7 +180,8 @@ ul {
 	height: 94px;
 	border-right: 1px solid #fff;
 	float: left;
-	background: #fff url(../img/title3.jpg) no-repeat left top;
+/*	background: #fff url(../img/title3.jpg) no-repeat left top;*/
+	background: #fff url(../img/title_new.png) no-repeat left top;
 }
 #win #nav #right {
 	width: 475px;
