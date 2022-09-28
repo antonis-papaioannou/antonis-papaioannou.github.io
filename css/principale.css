@@ -229,7 +229,9 @@ ul {
 	width: 474px;
 	height: 220px;
 	float: right;
-	background: #fff url(../img/uoc.jpg) no-repeat left top;
+/*	background: #fff url(../img/uoc.jpg) no-repeat left top;*/
+	background: #fff url(../img/cover_art.png) no-repeat;
+    background-size: 507px 210px;
 }
 
 #win #bound {
